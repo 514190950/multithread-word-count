@@ -19,7 +19,7 @@ import java.util.stream.Collectors;
 
 /****
  * 将所有文件分发给对应线程
- * 每个线程统计自己的数量 (在每个线程中合并  这次用读写锁操作)
+ * 每个线程统计自己的数量 (在每个线程中合并)
  * 使用Runnable
  *
  * 使用 CyclicBarrier实现唤醒  (当所有线程都汇总到reduce中 唤醒主线程)
